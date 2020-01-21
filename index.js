@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 const port = process.env.PORT || 3131
 const screenshot = require('./screenshot')
-
+await screenshot('http://tux2nux.blogspot.com')
 app.get('/', (req, res) => res.status(200).json({ status: 'ok' }))
 
 app.get('/screenshot', (req, res) => {
