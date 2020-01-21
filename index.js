@@ -3,7 +3,7 @@ const app = express()
 const port = process.env.PORT || 3131
 const screenshot = require('./screenshot')
 
-app.get('/', (req, res) => res.status(200).json({ status: 'ok' }))
+app.get('/', (req, res) => res.status(200).json({ status: 'new comment' }))
 app.get('/mi', function(req, res) {
     res.sendFile(path.join(__dirname + '/mi.html'));
 });
