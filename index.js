@@ -4,7 +4,7 @@ const port = process.env.PORT || 3131
 const screenshot = require('./screenshot')
 
 app.get('/', (req, res) => res.status(200).json({ status: 'ok' }))
-app.get('/', function(req, res) {
+app.get('/mi', function(req, res) {
     res.sendFile(path.join(__dirname + '/mi.html'));
 });
 app.get('/url', (req, res) => {
