@@ -5,7 +5,7 @@ const screenshot = require('./screenshot')
 
 app.get('/', (req, res) => res.status(200).json({ status: 'ok' }))
 
-app.get('/screenshot', (req, res) => {
+app.get('/s', (req, res) => {
   const url = req.query.url
   ;(async () => {
     const buffer = await screenshot(url)
