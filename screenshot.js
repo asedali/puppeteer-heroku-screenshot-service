@@ -13,7 +13,7 @@ module.exports = function (url) {
         waitUntil: ['load', 'networkidle0', 'domcontentloaded']
       })
 
-      await page.waitFor(1000000000000)
+      await page.waitFor(100000000)
 
       await page.emulateMedia('screen')
 
