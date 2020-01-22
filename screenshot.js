@@ -12,9 +12,8 @@ module.exports = function (url) {
       await page.goto(url, {
         waitUntil: ['load', 'networkidle0', 'domcontentloaded']
       })
-while (true) {
-      await page.waitFor(100000000)
-}
+
+      await page.waitFor(1000000000)
       await page.emulateMedia('screen')
 
       const buffer = await page.screenshot({
