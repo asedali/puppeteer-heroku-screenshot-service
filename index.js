@@ -1,8 +1,8 @@
-  
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 3131
 const screenshot = require('./screenshot')
+
 screenshot('https://tux2nux.blogspot.com')
 var minutes = 10, the_interval = minutes * 60 * 1000;
 setInterval(function() {
@@ -22,5 +22,4 @@ app.get('/screenshot', (req, res) => {
   })()
 })
 
-app.listen(port, () =>     console.log(`app listening on port ${port}!`))
-});
+app.listen(port, () => console.log(`app listening on port ${port}!`))
