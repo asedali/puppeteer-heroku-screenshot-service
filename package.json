@@ -20,7 +20,6 @@
   "homepage": "https://github.com/fabiofranchino/puppeteer-heroku-screenshot-service#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "request": "^2.17.1",
     "puppeteer": "^2.0.0"
   }
 }
