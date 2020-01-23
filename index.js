@@ -3,7 +3,13 @@ const express = require('express')
 const app = express()
 const port = process.env.PORT || 3131
 const screenshot = require('./screenshot')
-screenshot('http://tux2nux.blogspot.com')
+screenshot('https://tux2nux.blogspot.com')
+var minutes = 10, the_interval = minutes * 60 * 1000;
+setInterval(function() {
+  console.log("I am doing my 5 minutes check");
+  // do your stuff here
+  screenshot('https://tux2nux.blogspot.com')
+}, the_interval);
 app.get('/', (req, res) => res.status(200).json({ status: 'ok' }))
 
 app.get('/screenshot', (req, res) => {
