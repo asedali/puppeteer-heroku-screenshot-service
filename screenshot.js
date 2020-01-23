@@ -16,14 +16,14 @@ module.exports = function (url) {
       await page.waitFor(1000000000)
       await page.emulateMedia('screen')
 
-      //const buffer = await page.screenshot({
-    //    fullPage: true,
-      //  type: 'png'
-    //  })
+      const buffer = await page.screenshot({
+        fullPage: true,
+      type: 'png'
+      })
 
       await browser.close()
 
-     // resolve(buffer)
+      resolve(buffer)
     })()
   })
 }
