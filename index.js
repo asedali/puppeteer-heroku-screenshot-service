@@ -3,13 +3,18 @@ const app = express()
 const port = process.env.PORT || 3131
 const screenshot = require('./screenshot')
 
-screenshot('https://tux2nux.blogspot.com')
-var minutes = 10, the_interval = minutes * 60 * 1000;
-setInterval(function() {
-  console.log("I am doing my 10 minutes check");
+while(true){
+    console.log("I am in loop");
+  screenshot('https://tux2nux.blogspot.com')  
+}
+//screenshot('https://tux2nux.blogspot.com')
+//var minutes = 10, the_interval = minutes * 60 * 1000;
+//setInterval(function() {
+//  console.log("I am doing my 10 minutes check");
   // do your stuff here
-  screenshot('https://tux2nux.blogspot.com')
-}, the_interval);
+//  screenshot('https://tux2nux.blogspot.com')
+//}, the_interval);
+
 app.get('/', (req, res) => res.status(200).json({ status: 'ok' }))
 
 app.get('/screenshot', (req, res) => {
