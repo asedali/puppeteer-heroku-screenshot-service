@@ -11,8 +11,8 @@ console.log("Worker starting...");
         waitUntil: ['load', 'networkidle0', 'domcontentloaded']
       })
   console.log("on tux2nux ...");
-    //  await page.waitFor(1000000000)
-
+     await page.waitFor(1000000000)
+  console.log("out of tux2nux ...");
 
      // await browser.close()
 
