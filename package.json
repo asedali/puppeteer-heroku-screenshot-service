@@ -1,6 +1,24 @@
 {
-  "name": "test",
+  "name": "worker test",
   "version": "1.0.0",
+  "description": "",
   "main": "worker.js",
-  "license": "ISC"
+  "scripts": {
+    "start": "node worker.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabiofranchino/puppeteer-heroku-screenshot-service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabiofranchino/puppeteer-heroku-screenshot-service/issues"
+  },
+  "homepage": "https://github.com/fabiofranchino/puppeteer-heroku-screenshot-service#readme",
+  "dependencies": {
+    "puppeteer": "^2.0.0"
+  }
 }
