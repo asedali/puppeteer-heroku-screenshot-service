@@ -12,19 +12,12 @@ module.exports = function (url) {
       await page.goto(url, {
         waitUntil: ['load', 'networkidle0', 'domcontentloaded']
       })
-  console.log("Waiting...");
-      await page.waitFor(1000000000)
+  console.log("on tux2nux ...");
+    //  await page.waitFor(1000000000)
 
-    //  await page.emulateMedia('screen')
 
-    //  const buffer = await page.screenshot({
-      //  fullPage: true,
-        //type: 'png'
-    //  })
+     // await browser.close()
 
-      await browser.close()
-
-    //  resolve(buffer)
     })()
   })
 }
