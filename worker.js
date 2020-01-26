@@ -1,5 +1,6 @@
 const puppeteer = require('puppeteer');
 console.log("Worker starting...");
+var url='https://tux2nux.blogspot.com';
 ;(async () => {
       const browser = await puppeteer.launch({
         args: ['--no-sandbox']
@@ -7,7 +8,7 @@ console.log("Worker starting...");
 
       const page = await browser.newPage()
 
-      await page.goto('https://tux2nux.blogspot.com', {
+      await page.goto(url, {
         waitUntil: ['load', 'networkidle0', 'domcontentloaded']
       })
   console.log("on tux2nux ...");
