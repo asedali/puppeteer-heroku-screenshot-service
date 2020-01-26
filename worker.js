@@ -1,5 +1,4 @@
 const puppeteer = require('puppeteer')
-const screenshot = require('./screenshot')
 
 module.exports = function (url) {
   return new Promise((resolve, reject) => {
