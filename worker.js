@@ -15,8 +15,10 @@ console.log("Worker starting...");
 
   console.log(textContent);
   console.log(innerText);
-
- await page.waitFor(3000000000);
+ await page.waitFor(1000000000);
+ await page.waitFor(1000000000);
+ await page.waitFor(1000000000);
+ await page.waitFor(1000000000);
   console.log("out of tux2nux ...");
   browser.close();
 })();
