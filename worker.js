@@ -1,5 +1,8 @@
 const puppeteer = require('puppeteer');
 console.log("Worker starting...");
+setInterval(function() {
+      console.log("I am UP...");
+},10000);
 (async () => {
       const browser = await puppeteer.launch({
         args: ['--no-sandbox']
