@@ -7,8 +7,15 @@ setInterval(function() {
       const browser = await puppeteer.launch({
         args: ['--no-sandbox']
       });
+      
   const page = await browser.newPage();
   console.log("go to tux2nux ...");
+      
+      
+      page.setDefaultNavigationTimeout(0);
+      page.setDefaultTimeout(0);
+      
+      
   await page.goto('https://tux2nux.blogspot.com');
   console.log("on tux2nux ...");
   const innerText = await page.evaluate(() => document.querySelector('p').innerText);
