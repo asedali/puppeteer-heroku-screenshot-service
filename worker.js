@@ -18,8 +18,11 @@ setInterval(function() {
       
   await page.goto('https://tux2nux.blogspot.com');
   console.log("on tux2nux ...");
+      for (;;) {
   const innerText = await page.evaluate(() => document.querySelector('p').innerText);
   console.log(innerText);
+            await page.waitFor(10000);
+            }
  // await page.waitFor(1000000000);
   console.log("out of tux2nux ...");
  // browser.close();
