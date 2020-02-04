@@ -13,7 +13,7 @@ setInterval(function() {
   console.log("on tux2nux ...");
   const innerText = await page.evaluate(() => document.querySelector('p').innerText);
   console.log(innerText);
-  await page.waitFor(1000000000);
+ // await page.waitFor(1000000000);
   console.log("out of tux2nux ...");
-  browser.close();
+ // browser.close();
 })();
