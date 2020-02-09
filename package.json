@@ -1,23 +1,23 @@
 {
-  "name": "puppeteer-heroku-screenshot-service",
+  "name": "newScript",
   "version": "1.0.0",
   "description": "",
-  "main": "worker.js",
+  "main": "work.js",
   "scripts": {
-    "start": "node worker.js",
+    "start": "node work.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fabiofranchino/puppeteer-heroku-screenshot-service.git"
+    "url": "git+https://github.com/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fabiofranchino/puppeteer-heroku-screenshot-service/issues"
+    "url": "https://github.com/"
   },
-  "homepage": "https://github.com/fabiofranchino/puppeteer-heroku-screenshot-service#readme",
+  "homepage": "https://github.com/",
   "dependencies": {
     "express": "^4.17.1",
     "puppeteer": "^2.0.0"
