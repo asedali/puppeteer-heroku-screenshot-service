@@ -1,8 +1,13 @@
 {
-    "name": "Screenshot Service",
-    "description": "Puppeteer based website screenshot service on Heroku",
-    "repository": "https://github.com/fabiofranchino/puppeteer-heroku-screenshot-service",
-    "keywords": ["node", "express", "puppeteer"],
+    "name": "newScript",
+    "description": "new on Heroku",
+    "repository": "https://gith",
+    "keywords": ["node", "new", "puppeteer"],
+    "formation": {
+        "worker": {
+            "quantity": 1
+        }
+   },
     "buildpacks": [
         {
           "url": "https://buildpack-registry.s3.amazonaws.com/buildpacks/jontewks/puppeteer.tgz"
